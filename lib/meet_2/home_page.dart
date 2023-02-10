@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_flutter_pertama/tugas/01-tugas_dialog_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -13,14 +14,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("Simple Code"),
+        title: const Text("Tugas Hasil Tulis Ulang Code"),
       ),
-      body: const Center(
-        child: Text('You have pressed the button 0 times.'),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(Icons.add),
+      body: Container(
+        child: const TugasDialogWidget(),
       ),
     );
   }

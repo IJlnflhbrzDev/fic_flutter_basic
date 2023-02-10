@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_layout/column_widget.dart';
-import 'package:project_flutter_pertama/meet_2/ch4topic2/basic_widget/text_widget.dart';
+import 'package:project_flutter_pertama/meet_2/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ColumnWidget(),
+      home: const HomePage(),
       // Scaffold(
       //   appBar: AppBar(
       //     title: const Text('Jago Flutter'),
@@ -99,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),

@@ -23,6 +23,7 @@ class _StatelessStatefulWidgetState extends State<StatelessStatefulWidget> {
             children: const [
               ShowText(text: 'Show Text Stateless'),
               ChangeTextWidget(),
+              Text('IDAIDHASIDHASIDHIH')
             ],
           ),
         ),
