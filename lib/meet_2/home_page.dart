@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_flutter_pertama/tugas/01-tugas_dialog_widget.dart';
+import 'package:project_flutter_pertama/tugas/02-tugas_form_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,8 +17,11 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         title: const Text("Tugas Hasil Tulis Ulang Code"),
       ),
-      body: Container(
-        child: const TugasDialogWidget(),
+      body: SizedBox(
+        height: MediaQuery.of(context).size.height,
+        child: Column(
+          children: const [TugasDialogWidget(), TugasFormWidget()],
+        ),
       ),
     );
   }
